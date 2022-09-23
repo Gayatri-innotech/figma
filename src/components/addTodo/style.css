@@ -1,4 +1,3 @@
-
 .modalBackground {
   width: 100vw;
   height: 100vh;
@@ -13,43 +12,35 @@
   border-radius: 12px;
   background-color: white;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  display: flex;
+  /* display: flex; */
   flex-direction: column;
-  padding: 25px;
 }
 
 .modalContainer .title {
     display: inline-block;
-    margin-top: 10px;
   }
-.modalContainer .body {
-  flex: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.7rem;
-  text-align: center;
-}
 
-.modalContainer .footer .btn {
+.modalBackground .body .btn {
     color: royalblue;
     border: none;
     background-color: white;
     font-size: 18px;
     float: left;
+    cursor: pointer;
 }
-.modalContainer .footer .btn1 {
+.modalBackground .body .btn1 {
     color: royalblue;
-    float: inline-end;
     border: none;
     background-color: white;
     font-size: 18px;
     float: right;
+    cursor: pointer;
+    display: block;
 }
 
 .modalBackground .body .box{
     width: 100%;
-    height: 130%;
+    height: 230px;
     border: 1px solid lightgray;
     border-radius: 12px;
 }

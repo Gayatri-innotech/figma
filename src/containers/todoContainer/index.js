@@ -1,5 +1,6 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Todo from '../../components/todoList';
+import Modal from '../../components/addTodo/Modal';
 
 const todoList = [
     {id:1, title:"Start making a presentation"},
@@ -9,10 +10,16 @@ const todoList = [
     {id:1, title:"Buy a chocolate for Charlotte"}
 ]
 const TodoContainer = () =>{
+    const [todos,setTodos] = useState(todoList)
+    const handleAddTodo = (newTodo)=>{
+        const newTodoList=[...todos,newTodo]
+        setTodos(newTodoList)
+    }
     return (
         <div>
-            {todoList.map((todo)=><Todo todo ={todo}/>)}
-            {/* <Todo/> */}
+            {todos.map((todo)=><Todo todo ={todo}/>)}
+            
+            <Modal addTodo = {handleAddTodo}/>
         </div>
     )
 }

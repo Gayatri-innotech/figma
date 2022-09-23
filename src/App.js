@@ -2,7 +2,7 @@ import { useState } from 'react';
 import './App.css';
 import TodoContainer from './containers/todoContainer';
 import {FaPlusCircle} from 'react-icons/fa'
-import Modal from './components/Modal';
+import Modal from './components/addTodo/Modal';
 
 const App = () => {
   const [openModal, setOpenModal] = useState(false);
